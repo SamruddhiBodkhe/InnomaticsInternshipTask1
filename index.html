@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            <div id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product List -->
+    <section id="products">
+        <div class="product">
+            <h3>iPhone 15</h3>
+            <p>$999</p>
+            <button onclick="addToCart('iPhone 15', 999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>MacBook Pro</h3>
+            <p>$1999</p>
+            <button onclick="addToCart('MacBook Pro', 1999)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>AirPods</h3>
+            <p>$199</p>
+            <button onclick="addToCart('AirPods', 199)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <div id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button onclick="clearCart()">Empty Cart</button>
+    </div>
+
+
+
